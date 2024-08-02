@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Our Products</h1>
+        </header>
+        <aside id="search">
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Books">Books</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="priceMin">Minimum Price</label>
+                <input type="number" id="priceMin" placeholder="0">
+            </div>
+            <div class="filter-group">
+                <label for="priceMax">Maximum Price</label>
+                <input type="number" id="priceMax" placeholder="1000">
+            </div>
+            <div class="filter-group">
+                <label for="brand">Brand</label>
+                <select id="brand">
+                    <option value="">All</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="LCWaiKiki">LCWaiKiki</option>
+                    <option value="Dawen bookstore">Dawen bookstore</option>
+                </select>
+            </div>
+        </aside>
+        <main id="product-list">
+            <div class="product" data-category="Electronics" data-price="200" data-brand="Samsung">
+                <img src="tablet.jpg" alt="tablet">
+                <h3>Tablet</h3>
+                <p>Electronics - $200 - Samsung</p>
+            </div>
+            <div class="product" data-category="Clothing" data-price="50" data-brand="LCWaiKiki">
+                <img src="hoodie.jpg" alt="Hoodie">
+                <h3>Hoodie</h3>
+                <p>Clothing - $50 - LCWaiKiki</p>
+            </div>
+            <div class="product" data-category="Books" data-price="15" data-brand="Dawen bookstore">
+                <img src="book.jpg" alt="Book">
+                <h3>Space Book</h3>
+                <p>Books - $15 - Dawen bookstore</p>
+            </div>
+            <div class="product" data-category="Electronics" data-price="500" data-brand="Samsung">
+                <img src="mobile.jpg" alt="mobile">
+                <h3>Mobile Phone</h3>
+                <p>Electronics - $500 - Samsung</p>
+            </div>
+            <div class="product" data-category="Electronics" data-price="150" data-brand="Samsung">
+                <img src="mobile2.jpg" alt="mobile">
+                <h3>Mobile phone</h3>
+                <p>Electronics - $150 - Samsung</p>
+            </div>
+            <div class="product" data-category="Clothing" data-price="50" data-brand="LCWaiKiki">
+                <img src="jeans.webp" alt="Jeans">
+                <h3>Baggy Jeans</h3>
+                <p>Clothing - $80 - LCWaiKiki</p>
+            </div>
+            <div class="product" data-category="Books" data-price="15" data-brand="Dawen bookstore">
+                <img src="book2.webp" alt="Book">
+                <h3>The Kite Runner</h3>
+                <p>Books - $10 - Dawen bookstore</p>
+            </div>
+            <div class="product" data-category="Clothing" data-price="90" data-brand="LCWaiKiki">
+                <img src="dress.webp" alt="dress">
+                <h3>Dress</h3>
+                <p>Clothing - $90 - LCWaiKiki</p>
+            </div>
+        </main>
+    </div>
+    <script src="filter.js"></script>
+</body>
+</html>
